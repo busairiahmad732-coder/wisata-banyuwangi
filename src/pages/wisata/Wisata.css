@@ -4,14 +4,17 @@
 .pegunungan,
 .pantai,
 .savana,
-.hutan {
+.hutan,
+.danau {
     padding: 70px;
 }
 
 .judul-air,
 .judul-gunung,
 .judul-pantai,
-.judul-savana {
+.judul-savana,
+.judul-hutan,
+.judul-danau {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -20,14 +23,18 @@
 .judul-air h1,
 .judul-gunung h1,
 .judul-pantai h1,
-.judul-savana h1 {
+.judul-savana h1,
+.judul-hutan h1,
+.judul-danau h1 {
     font-weight: bold;
 }
 
 .judul-air p,
 .judul-gunung p,
 .judul-pantai p,
-.judul-savana p {
+.judul-savana p,
+.judul-hutan p,
+.judul-danau p {
     text-transform: none;
     color: #666;
 }
