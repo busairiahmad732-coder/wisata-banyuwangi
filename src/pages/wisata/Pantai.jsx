@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import "./Wisata.css"
 
-const daftarPantai = [
+export const daftarPantai = [
     {
         id: "pm",
         nama: "Pulau Merah",

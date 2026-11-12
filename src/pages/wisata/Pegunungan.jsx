@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Wisata.css";
 
-const daftarPegunungan = [
+export const daftarPegunungan = [
     {
         id: "ijen",
         nama: "Kawah Ijen",

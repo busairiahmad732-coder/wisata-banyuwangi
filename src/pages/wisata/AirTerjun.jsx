@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Wisata.css";
 
-const daftarAirTerjun = [
+export const daftarAirTerjun = [
     {
         id: "jagir",
         nama: "Air Terjun Jagir",

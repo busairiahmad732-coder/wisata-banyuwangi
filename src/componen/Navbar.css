@@ -1,5 +1,6 @@
 .navbar {
     background-color: transparent;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .navbar:hover {
     background-color: white;
@@ -17,4 +18,56 @@
 
 .navbar-nav .nav-link.active {
     color: orange !important;
+}
+
+.navbar-sembunyi {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.pencarian-navbar {
+    width: 280px;
+}
+
+.hasil-pencarian {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 8px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 1050;
+}
+
+.item-pencarian {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.item-pencarian:hover {
+    background: #f0f0f0;
+}
+
+.item-pencarian span {
+    font-weight: 600;
+}
+
+.item-pencarian small {
+    color: #198754;
+}
+
+.pencarian-kosong {
+    padding: 12px;
+    color: #777;
 }

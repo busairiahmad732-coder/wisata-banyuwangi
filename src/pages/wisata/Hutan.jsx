@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import "./Wisata.css"
 
-const daftarHutan = [
+export const daftarHutan = [
     {
         id: "dj",
         nama: "De Djawatan",
