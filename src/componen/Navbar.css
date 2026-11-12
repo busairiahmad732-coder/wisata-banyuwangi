@@ -1,0 +1,20 @@
+.navbar {
+    background-color: transparent;
+}
+.navbar:hover {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link.active {
+    color: orange !important;
+}

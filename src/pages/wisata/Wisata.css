@@ -1,0 +1,82 @@
+
+/* HALAMAN AIR TERJUN */
+.air-terjun,
+.pegunungan,
+.pantai,
+.savana {
+    padding: 70px;
+}
+
+.judul-air,
+.judul-gunung,
+.judul-pantai,
+.judul-savana {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.judul-air h1,
+.judul-gunung h1,
+.judul-pantai h1,
+.judul-savana h1 {
+    font-weight: bold;
+}
+
+.judul-air p,
+.judul-gunung p,
+.judul-pantai p,
+.judul-savana p {
+    text-transform: none;
+    color: #666;
+}
+
+/* CARD WISATA */
+.card-wisata {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: -1px 1px 5px green;
+
+    transition: all 0.5s ease;
+}
+
+/* FOTO CARD */
+.card-wisata .gambar-card {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-wisata:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px green;
+}
+
+/* FOTO */
+.gambar-card {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* LABEL LOKASI */
+.label-lokasi {
+    width: fit-content;
+    align-self: flex-start;
+}
+
+/*KEMBALI*/
+.kembali {
+    margin: 20px;
+}
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .air-terjun {
+        padding: 25px 15px;
+    }
+}
