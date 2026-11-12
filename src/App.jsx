@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Tentang from "./pages/Tentang";
 import Navbar from "./componen/Navbar";
 import NotFound from "./pages/NotFound";
+import Footer from "./componen/footer";
 
 import Beranda from "./pages/Beranda";
 import AirTerjun from "./pages/wisata/AirTerjun";
@@ -30,6 +31,7 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

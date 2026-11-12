@@ -1,0 +1,132 @@
+
+.footer-wisata {
+    background: linear-gradient(135deg, #082c1c, #10452c);
+    color: #ffffff;
+    padding: 65px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.footer-brand:hover {
+    color: #a8e6a3;
+}
+
+.footer-logo {
+    font-size: 43px;
+}
+
+.footer-deskripsi {
+    color: #d0dfd5;
+    line-height: 1.8;
+    margin-top: 22px;
+    max-width: 350px;
+}
+
+.footer-slogan {
+    color: #a8d5a8;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.footer-judul {
+    color: #b8e6a8;
+    font-weight: 700;
+    margin-bottom: 22px;
+    font-size: 19px;
+}
+
+.footer-list,
+.footer-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 13px;
+}
+
+.footer-list a {
+    color: #d0dfd5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-list a::before {
+    content: "›";
+    color: #8fce85;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+.footer-list a:hover {
+    color: #a8e6a3;
+    padding-left: 5px;
+}
+
+.footer-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #d0dfd5;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.footer-info span {
+    font-size: 19px;
+}
+
+.btn-footer {
+    background: transparent;
+    border: 1px solid #a8e6a3;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.btn-footer:hover {
+    background: #a8e6a3;
+    color: #082c1c;
+}
+
+.footer-garis {
+    border-color: rgba(255, 255, 255, 0.25);
+    margin: 40px 0 22px;
+}
+
+.footer-bawah {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #b9cbbf;
+    font-size: 13px;
+}
+
+.footer-bawah p {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .footer-wisata {
+        padding: 45px 0 20px;
+    }
+
+    .footer-bawah {
+        flex-direction: column;
+        text-align: center;
+    }
+}
