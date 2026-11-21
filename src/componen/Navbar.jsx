@@ -96,7 +96,7 @@ function Navbar() {
 
                         </ul>
 
-                        <div className="position-relative pencarian-navbar">
+                        <div className="form position-relative pencarian-navbar">
                             <form
                                 className="d-flex"
                                 role="search"
@@ -115,6 +115,7 @@ function Navbar() {
                                     value={pencarian}
                                     onChange={(e) => setPencarian(e.target.value)}
                                     aria-label="Cari wisata"
+                                    required
                                 />
 
                                 <button className="btn btn-outline-success" type="submit">

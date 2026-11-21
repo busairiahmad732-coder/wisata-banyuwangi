@@ -29,7 +29,7 @@ function Beranda() {
             <div className="hero-posisi row mb-2">
 
                 {/*AIR TERJUN*/}
-                <div className=" col-md-6">
+                <div className="col-md-6">
                     <div className="hero-card row g-0 border rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
                         <div className="col-12 col-lg p-4 d-flex flex-column position-static">
                             <strong className="d-inline-block mb-2 text-primary-emphasis">

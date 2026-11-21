@@ -47,6 +47,7 @@ body {
 
 body {
   overflow-x: hidden;
+  background-color: #F4F8F3;
 }
 
 /* Membuat React memenuhi layar */

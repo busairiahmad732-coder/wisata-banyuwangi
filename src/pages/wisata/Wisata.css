@@ -5,7 +5,8 @@
 .pantai,
 .savana,
 .hutan,
-.danau {
+.danau,
+.tentang {
     padding: 70px;
 }
 
@@ -14,7 +15,8 @@
 .judul-pantai,
 .judul-savana,
 .judul-hutan,
-.judul-danau {
+.judul-danau,
+.judul-tentang {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -25,7 +27,8 @@
 .judul-pantai h1,
 .judul-savana h1,
 .judul-hutan h1,
-.judul-danau h1 {
+.judul-danau h1,
+.judul-tentang h1 {
     font-weight: bold;
 }
 
@@ -34,9 +37,11 @@
 .judul-pantai p,
 .judul-savana p,
 .judul-hutan p,
-.judul-danau p {
+.judul-danau p,
+.judul-tentang p {
     text-transform: none;
     color: #666;
+    text-align: center;
 }
 
 /* CARD WISATA */
@@ -47,6 +52,8 @@
     overflow: hidden;
     border-radius: 12px;
     box-shadow: -1px 1px 5px green;
+
+    background-color: transparent;
 
     transition: all 0.5s ease;
 }
@@ -81,6 +88,11 @@
 /*KEMBALI*/
 .kembali {
     margin: 20px;
+}
+
+.tentang {
+    display: flex;
+    text-align: justify;
 }
 /* RESPONSIVE */
 @media (max-width: 767px) {

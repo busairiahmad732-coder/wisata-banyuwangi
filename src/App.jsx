@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 import Tentang from "./pages/Tentang";
 import Navbar from "./componen/Navbar";
@@ -20,10 +22,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Beranda />} />
         <Route path="/tentang" element={<Tentang />} />
-      
 
-        <Route path="/wisata/air-terjun" element={<AirTerjun />}/>
-        <Route path="/wisata/pegunungan" element={<Pegunungan /> }/>
+
+        <Route path="/wisata/air-terjun" element={<AirTerjun />} />
+        <Route path="/wisata/pegunungan" element={<Pegunungan />} />
         <Route path="/wisata/pantai" element={<Pantai />} />
         <Route path="/wisata/savana" element={<Savana />} />
         <Route path="/wisata/hutan" element={<Hutan />} />

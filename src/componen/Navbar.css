@@ -71,3 +71,6 @@
     padding: 12px;
     color: #777;
 }
+.form input{
+    background-color: transparent;
+}
