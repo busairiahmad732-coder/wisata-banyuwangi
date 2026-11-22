@@ -14,13 +14,6 @@ function Footer() {
         { nama: "Danau", link: "/wisata/danau" },
     ];
 
-    const kembaliKeAtas = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
-
     return (
         <footer className="footer-wisata">
             <div className="container">
@@ -88,12 +81,6 @@ function Footer() {
                             </li>
                         </ul>
 
-                        <button
-                            className="btn-footer"
-                            onClick={kembaliKeAtas}
-                        >
-                            ↑ Kembali ke Atas
-                        </button>
                     </div>
 
                 </div>

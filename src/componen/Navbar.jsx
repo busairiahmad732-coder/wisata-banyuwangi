@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Collapse } from "bootstrap";
 import { DaftarPencarian } from "../data/DaftarPencarian";
 import "./Navbar.css";
 
@@ -16,6 +17,20 @@ function Navbar() {
                 setSembunyi(false);
             } else if (scrollSekarang > scrollTerakhir) {
                 setSembunyi(true);
+                //tutup navbar
+                if (window.innerWidth < 992) {
+                    const menuNavbar = document.getElementById(
+                        "navbarSupportedContent"
+                    );
+                    if(menuNavbar?.classList.contains("show")) {
+                        const collapse = Collapse.getOrCreateInstance(
+                            menuNavbar,
+                            {toggle: false}
+                        );
+
+                        collapse.hide();
+                    }
+                }
             } else {
                 setSembunyi(false);
             }
