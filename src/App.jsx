@@ -1,11 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
-import axios from "axios";
 
 import Tentang from "./pages/Tentang";
 import Navbar from "./componen/Navbar";
 import NotFound from "./pages/NotFound";
-import Footer from "./componen/footer";
+import Footer from "./componen/Footer";
 
 import Beranda from "./pages/Beranda";
 import AirTerjun from "./pages/wisata/AirTerjun";
