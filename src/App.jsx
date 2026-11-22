@@ -13,9 +13,12 @@ import Pantai from "./pages/wisata/Pantai";
 import Pegunungan from "./pages/wisata/Pegunungan";
 import Savana from "./pages/wisata/Savana";
 
+import ScrollToTop from "./componen/ScrollToTop";
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Beranda />} />
