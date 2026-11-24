@@ -6,6 +6,7 @@ import "./Navbar.css";
 
 function Navbar() {
     const [sembunyi, setSembunyi] = useState(false);
+    const [wisataTerbuka, setWisataTerbuka] = useState(false);
 
     useEffect(() => {
         let scrollTerakhir = window.scrollY;
@@ -22,10 +23,10 @@ function Navbar() {
                     const menuNavbar = document.getElementById(
                         "navbarSupportedContent"
                     );
-                    if(menuNavbar?.classList.contains("show")) {
+                    if (menuNavbar?.classList.contains("show")) {
                         const collapse = Collapse.getOrCreateInstance(
                             menuNavbar,
-                            {toggle: false}
+                            { toggle: false }
                         );
 
                         collapse.hide();
@@ -93,16 +94,70 @@ function Navbar() {
                                 <NavLink end className="nav-link" to="/">Halaman Utama</NavLink>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button
+                                    type="button"
+                                    className="nav-link dropdown-toggle"
+                                    aria-expanded={wisataTerbuka}
+                                    onClick={() => setWisataTerbuka(!wisataTerbuka)}
+                                >
                                     Wisata
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><NavLink className="dropdown-item" to="/wisata/air-terjun">Air Terjun</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="/wisata/pegunungan">Pegunungan</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="/wisata/pantai">Pantai</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="/wisata/savana">Savana</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="/wisata/hutan">Hutan</NavLink></li>
-                                    <li><NavLink className="dropdown-item" to="/wisata/danau">Danau</NavLink></li>
+                                </button>
+
+                                <ul className={`dropdown-menu ${wisataTerbuka ? "show" : ""}`}>
+                                    <li>
+                                        <NavLink
+                                            className="dropdown-item"
+                                            to="/wisata/air-terjun"
+                                            onClick={() => setWisataTerbuka(false)}
+                                        >
+                                            Air Terjun
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink
+                                            className="dropdown-item"
+                                            to="/wisata/pegunungan"
+                                            onClick={() => setWisataTerbuka(false)}
+                                        >
+                                            Pegunungan
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink
+                                            className="dropdown-item"
+                                            to="/wisata/pantai"
+                                            onClick={() => setWisataTerbuka(false)}
+                                        >
+                                            Pantai
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink
+                                            className="dropdown-item"
+                                            to="/wisata/savana"
+                                            onClick={() => setWisataTerbuka(false)}
+                                        >
+                                            Savana
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink
+                                            className="dropdown-item"
+                                            to="/wisata/hutan"
+                                            onClick={() => setWisataTerbuka(false)}
+                                        >
+                                            Hutan
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink
+                                            className="dropdown-item"
+                                            to="/wisata/danau"
+                                            onClick={() => setWisataTerbuka(false)}
+                                        >
+                                            Danau
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
