@@ -36,6 +36,7 @@ function Navbar() {
                 setSembunyi(false);
             }
 
+            setWisataTerbuka(false);
             scrollTerakhir = scrollSekarang;
         };
 
