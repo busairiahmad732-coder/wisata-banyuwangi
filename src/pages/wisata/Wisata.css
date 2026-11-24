@@ -5,8 +5,7 @@
 .pantai,
 .savana,
 .hutan,
-.danau,
-.tentang {
+.danau{
     padding: 70px;
 }
 
@@ -15,8 +14,7 @@
 .judul-pantai,
 .judul-savana,
 .judul-hutan,
-.judul-danau,
-.judul-tentang {
+.judul-danau {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -27,8 +25,7 @@
 .judul-pantai h1,
 .judul-savana h1,
 .judul-hutan h1,
-.judul-danau h1,
-.judul-tentang h1 {
+.judul-danau h1 {
     font-weight: bold;
 }
 
@@ -37,8 +34,7 @@
 .judul-pantai p,
 .judul-savana p,
 .judul-hutan p,
-.judul-danau p,
-.judul-tentang p {
+.judul-danau p {
     text-transform: none;
     color: #666;
     text-align: center;
@@ -90,10 +86,6 @@
     margin: 20px;
 }
 
-.tentang {
-    display: flex;
-    text-align: justify;
-}
 /* RESPONSIVE */
 @media (max-width: 767px) {
     .air-terjun {

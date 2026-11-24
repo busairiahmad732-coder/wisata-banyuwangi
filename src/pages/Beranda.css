@@ -1,3 +1,70 @@
+/* BANNER UTAMA */
+.hero-banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #222;
+}
+
+/* Background slideshow */
+.background-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.gambar-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.gambar-slide.aktif {
+    opacity: 1;
+}
+
+/* Lapisan gelap agar teks terbaca */
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Teks di atas slideshow */
+.isi-beranda {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 8%;
+}
+
+.isi-beranda h1,
+.isi-beranda p {
+    color: white;
+}
+
+.isi-beranda h1 {
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.isi-beranda p {
+    max-width: 750px;
+    line-height: 1.7;
+}
+
+/* Judul dan paragraf banner */
 .hero-banner h1 {
     color: white;
     font-weight: bold;
@@ -8,6 +75,71 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Tombol slideshow kiri dan kanan */
+.tombol-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.tombol-slide.kiri {
+    left: 20px;
+}
+
+.tombol-slide.kanan {
+    right: 20px;
+}
+
+/* Bentuk tombol panah */
+.tombol-panah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 35px;
+    line-height: 1;
+    transition: background 0.2s ease;
+}
+
+.tombol-panah:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 450px;
+    }
+
+    .isi-beranda {
+        padding: 0 6%;
+    }
+
+    .tombol-slide.kiri {
+        left: 10px;
+    }
+
+    .tombol-slide.kanan {
+        right: 10px;
+    }
+
+    .tombol-panah {
+        width: 35px;
+        height: 35px;
+        font-size: 28px;
+    }
+}
+
+/* Posisi card beranda */
 .hero-posisi {
     padding: 20px;
     row-gap: 30px;
@@ -24,13 +156,14 @@
     box-shadow: 0 10px 20px black;
 }
 
-/* TAMPILAN LAPTOP DAN DESKTOP */
+/* Tampilan laptop dan desktop */
 @media (min-width: 992px) {
     .hero-card {
         align-items: stretch;
         height: 100%;
         min-height: 300px;
     }
+
     .hero-posisi > div {
         width: 50%;
     }
@@ -56,7 +189,8 @@
         object-fit: cover;
     }
 }
-/* TAMPILAN TABLET DAN HP */
+
+/* Tampilan tablet dan HP */
 @media (max-width: 991.98px) {
     .hero-card {
         display: flex;
@@ -82,7 +216,8 @@
         object-fit: cover;
     }
 }
-/* TAMPILAN TABLET */
+
+/* Tampilan tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hero-card {
         display: flex;
@@ -90,12 +225,10 @@
         height: 100%;
     }
 
-    /* Bagian teks */
     .hero-card > div:first-child {
         flex: 1;
     }
 
-    /* Bagian gambar */
     .hero-card > div:last-child {
         margin-top: auto;
     }
@@ -107,4 +240,21 @@
         min-height: unset;
         object-fit: cover;
     }
+}
+
+/* Tombol navigasi */
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-nav {
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 5vh;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

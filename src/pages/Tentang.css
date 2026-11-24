@@ -1,0 +1,23 @@
+.tentang {
+    width: 100%;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.tentang .container {
+    padding-top: 100px !important;
+}
+.judul-tentang{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.tentang p {
+    color: white;
+    text-align: justify;
+}
